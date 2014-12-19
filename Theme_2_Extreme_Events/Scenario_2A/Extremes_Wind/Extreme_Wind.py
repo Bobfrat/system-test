@@ -154,7 +154,7 @@ dap_urls = service_urls(csw.records)
 # Remove duplicates and organize.
 dap_urls = sorted(set(dap_urls))
 print("Total DAP: %s" % len(dap_urls))
-print("\n".join(dap_urls[0:10]))
+print("\n".join(dap_urls[:]))
 
 # <markdowncell>
 
@@ -166,7 +166,7 @@ sos_urls = service_urls(csw.records, service='sos:url')
 # Remove duplicates and organize.
 sos_urls = sorted(set(sos_urls))
 print("Total SOS: %s" % len(sos_urls))
-print("\n".join(sos_urls[0:10]))
+print("\n".join(sos_urls[:]))
 
 # <markdowncell>
 
