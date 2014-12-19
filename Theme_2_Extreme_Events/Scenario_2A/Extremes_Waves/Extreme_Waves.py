@@ -143,7 +143,7 @@ dap_urls = service_urls(csw.records)
 dap_urls = sorted(set(dap_urls))
 print "Total DAP:",len(dap_urls)
 #print the first 10...
-print "\n".join(dap_urls[1:10])
+print "\n".join(dap_urls[:])
 
 # <markdowncell>
 
@@ -156,7 +156,7 @@ sos_urls = service_urls(csw.records,service='sos:url')
 #remove duplicates and sort
 sos_urls = sorted(set(sos_urls))
 print "Total SOS:",len(sos_urls)
-print "\n".join(sos_urls[1:10])
+print "\n".join(sos_urls[:])
 
 # <markdowncell>
 
